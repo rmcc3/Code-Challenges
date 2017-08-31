@@ -29,12 +29,12 @@ class CompressString {
                 count = 1;
             }
         }
-        console.log(this.builtString);
+        return this.builtString;
     }
 }
 
 const meow = new CompressString('aaabbcdddda');
-meow.findDuplicates();
+console.log(meow.findDuplicates());
 
 const meow2 = new CompressString('abcdefg');
-meow2.findDuplicates();
+console.log(meow2.findDuplicates());
