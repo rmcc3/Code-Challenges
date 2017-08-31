@@ -29,7 +29,7 @@ class CompressString {
                 count = 1;
             }
         }
-        return this.builtString;
+        return ((this.builtString !== '') ? this.builtString : 'Empty');
     }
 }
 
