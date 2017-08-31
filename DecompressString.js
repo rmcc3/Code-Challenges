@@ -11,7 +11,7 @@ class DecompressString {
         this.builtString = '';
     }
 
-    // Loop through the string to find duplicates, and then decompress it.
+    // Loop through the string to find the numbers, and then decompress it.
     decompress() {
         if (this.str.length <= 0)
             throw new TypeError('Input string is empty');
