@@ -11,14 +11,14 @@ class DecompressString {
         this.builtString = '';
     }
 
-    // Loop through the string to find duplicates, and then compress it.
+    // Loop through the string to find duplicates, and then decompress it.
     decompress() {
         if (this.str.length <= 0)
             throw new TypeError('Input string is empty');
 
         for (let i = 0; i < this.str.length; i++) {
             let current = this.str.substr(i, 1); // The current letter.
-            let next = parseInt(this.str.substr(i+1, 1)); // The next letter to compare to.
+            let next = parseInt(this.str.substr(i+1, 1)); // The next letter/number to compare to.
 
             if (!isNaN(next)) {
                 this.builtString = this.builtString + current.repeat(next);
